@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 92vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3137254902), rgba(0, 0, 0, 0.4392156863)), url(../assets/clovis-castaneda--97MyV1TOJk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.conteiner {
+  width: 60%;
+  background: #fff;
+  margin: 50px auto;
+  padding: 50px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.card__hr {
+  margin: 2% 10%;
+}
+
+.card__name {
+  font-size: 30px;
+}
+
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #000000;
+}
+
+.svg-icon circle {
+  stroke: #000000;
+  stroke-width: 1;
+}
+
+.card__division {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.title {
+  margin-top: -20px;
+  margin-bottom: 25px;
+}
+
+/*# sourceMappingURL=slider.css.map */
