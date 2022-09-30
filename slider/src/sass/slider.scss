@@ -13,8 +13,8 @@ body {
 .conteiner {
     width: 60%;
     background: #fff;
-    margin: 50px auto;
-    padding: 50px;
+    margin: 30px auto;
+    padding: 40px 50px;
     text-align: center;
     border-radius: 4px;
     ;
@@ -53,6 +53,7 @@ body {
   .card__division{
     display: flex;
     justify-content: space-evenly;
+  
   }
 
   .title{
@@ -61,3 +62,36 @@ body {
     margin-bottom: 25px;
 
   }
+  
+  .conteiner__dots{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    
+  }
+  .dots{
+    width: 17px;
+    height: 17px;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+  .dots:hover{
+    background-color: aqua;
+  }
+
+  .card__buttons{
+    border-radius: 25%;
+    padding:4px;
+    background-color: #fff;
+    border: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+
+  // .card__buttons:hover{
+  //   background-color: rgb(21, 182, 40);
+  // }
