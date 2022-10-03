@@ -1,9 +1,23 @@
 
+import { useState } from "react"
+import Data from "../data/slider-data.json"
+
 export const Slide = () => {
+
+  const [place, setPlace] = useState(Data.place)
+
+
+console.log(Data.place)
+
   return (
 
+
     <div className="conteiner">
-      <h2 className="title">~ Lugares turisticos de Guatemala ~</h2>
+
+      <h2 className="title">{Data.title}</h2>
+      
+      <h2>{Data.place.name}</h2>
+      
       <div className="card">
         <div className="card__photo">
           <img src="https://www.guatemala.com/fotos/201710/Antigua-Guatemala.gif" alt="" />
@@ -33,7 +47,14 @@ export const Slide = () => {
         <div className="dots" ></div>
         <div className="dots"></div>
       </div>
+      {
+        place.map(( place ) => (
+          <p className="card__name" key={place}>{place.name}</p>
+        ))
+      }
     </div>
+
+    
 
   )
 }
